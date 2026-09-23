@@ -1,27 +1,34 @@
 %%=============================================================================
 %% CAPITULO 3 -- PROCEDIMENTOS METODOLOGICOS
+%% Texto dummy do exercicio ia-6.1.
 %%=============================================================================
 
 \section{Procedimentos metodológicos}
 
-Apresente, de forma clara e objetiva, o modo pelo qual o projeto foi
-implementado. Após um breve texto introdutório, explicite a metodologia em etapas
-ou ações. Poderá, ainda, fazer referência às técnicas ou a detalhes específicos.
-Explique como se deu o acompanhamento do desenvolvimento do projeto e a avaliação
-de sua efetividade.
+A pesquisa é aplicada e de abordagem quantitativa. Um conjunto de perfis
+sintéticos de investidores, variando objetivo, prazo e tolerância a risco, será
+submetido a um protótipo de recomendador que escolhe entre os produtos da
+Tabela~\ref{tab:produtos} e gera, para cada escolha, uma justificativa em
+português.
 
-\subsection{Tipo e abordagem da pesquisa}
+Cada par formado por recomendação e justificativa será avaliado em duas
+dimensões: a adequação do produto ao perfil, por regra explícita derivada da
+regulação de suitability, e a fidedignidade do texto, pela comparação de cada
+afirmação com a ficha do produto, classificando as divergências segundo a
+tipologia de alucinação adotada no Capítulo~2.
 
-Classifique a pesquisa quanto à natureza, aos objetivos, à abordagem e aos
-procedimentos técnicos adotados.
-
-\subsection{Instrumentos de coleta de dados}
-
-Descreva os instrumentos utilizados, o universo e a amostra, os critérios de
-inclusão e exclusão e o período de coleta.
-
-\subsection{Procedimentos de análise}
-
-Explique como os dados foram tratados e analisados, indicando as categorias de
-análise e, quando houver, as ferramentas estatísticas ou de análise de conteúdo
-empregadas.
+\begin{table}[htb]
+  \caption{Produtos de renda fixa cobertos pelo protótipo}
+  \label{tab:produtos}
+  \centering
+  \begin{tabular}{lll}
+    \toprule
+    \textbf{Produto} & \textbf{Garantia} & \textbf{Imposto de renda (PF)} \\
+    \midrule
+    Tesouro Direto & Tesouro Nacional & tabela regressiva \\
+    CDB            & FGC              & tabela regressiva \\
+    LCI e LCA      & FGC              & isento            \\
+    \bottomrule
+  \end{tabular}
+  \fonte{Elaborado pela autora (2026).}
+\end{table}
